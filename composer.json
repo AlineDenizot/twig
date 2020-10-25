@@ -1,0 +1,29 @@
+{
+    "name": "aline/twig",
+    "description": "",
+    "authors": [
+        {
+            "name": "Aline",
+            "email": "aline.denizot2@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php" : ">=7.2",
+        "ext-pdo" : "*",
+        "twig/twig": "^3.1"
+    },
+    "require-dev": {
+        "phpmd/phpmd": "^2.7",
+        "phpro/grumphp": "^0.15.0",
+        "phpstan/phpstan": "^0.11.2",
+        "squizlabs/php_codesniffer": "*",
+        "filp/whoops": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+    
+}

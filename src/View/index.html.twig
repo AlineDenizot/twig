@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block title %} The Walking Dead - Comics{% endblock %}
+
+{% block content %}
+
+<h1 class="text-center"> The Walking Dead</h1>
+
+<div class="row">
+    {% for product in products %}
+        
+        <div class="card col-4" style="width: 18rem;">
+            <div class="card-body">
+                <img src="{{product.image.url}}" class="card-img-top" alt="...">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.description}}</p>
+                <p class="card-text">{{product.price}}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
